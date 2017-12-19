@@ -11,7 +11,7 @@ import { Router } from '@angular/router/src/router';
             { path: 'welcome', component: WelcomeComponent},
             { path: '', redirectTo: 'welcome', pathMatch: 'full'},
             { path: '**', component: PageNotFoundComponent }
-          ])
+          ], { /*enableTracing: true */})
     ],
     exports: [ RouterModule]
 })
