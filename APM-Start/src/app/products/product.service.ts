@@ -10,6 +10,7 @@ import 'rxjs/add/observable/of';
 
 import { IProduct } from './product';
 
+/* Service should always be a Singleton */
 @Injectable()
 export class ProductService {
     private baseUrl = 'api/products';
