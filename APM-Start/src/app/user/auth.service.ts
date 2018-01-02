@@ -21,19 +21,47 @@ export class AuthService {
         }
         if (userName === 'admin') {
             this.currentUser = {
-                id: 1,
-                userName: userName,
-                isAdmin: true
+                UserId: 1,                
+                FirstName: "Rohaan",
+                LastName: "Kathirgamathamby",
+                Email: "rohaan@email.com",
+                UserName: userName,
+                UserAccessLevelId: 1,
+                IsActive: true,
+                MemberTypeId: 1,
+                MobileNumber: "0455240905",
+                CompanyName: "Demo",
+                ContactPerson: "Rohaan",
+                Address1: "Address 1",
+                Address2: "Address 2",
+                CountryId: 64,
+                CityId: 1,
+                Website: "www.demo.com",
+                IsAdmin: true
             };
             this.messageService.addMessage('Admin login');
             return;
         }
         this.currentUser = {
-            id: 2,
-            userName: userName,
-            isAdmin: false
+            UserId: 1,                
+            FirstName: "Rohaan",
+            LastName: "Kathirgamathamby",
+            Email: "rohaan@email.com",
+            UserName: userName,
+            UserAccessLevelId: 1,
+            IsActive: true,
+            MemberTypeId: 1,
+            MobileNumber: "0455240905",
+            CompanyName: "Demo",
+            ContactPerson: "Rohaan",
+            Address1: "Address 1",
+            Address2: "Address 2",
+            CountryId: 64,
+            CityId: 1,
+            Website: "www.demo.com",
+            IsAdmin: false
         };
-        this.messageService.addMessage(`User: ${this.currentUser.userName} logged in`);
+        this.messageService.addMessage(`User: ${this.currentUser.UserName} logged in`);
     }
 
     logout(): void {
