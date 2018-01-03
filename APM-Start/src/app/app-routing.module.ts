@@ -11,6 +11,7 @@ import { Router } from '@angular/router/src/router';
         RouterModule.forRoot([
             { path: 'welcome', component: WelcomeComponent},
             { path: 'products', canLoad: [AuthGuard], loadChildren: 'app/products/product.module#ProductModule'},
+            //{ path: 'venues', canLoad: [AuthGuard], loadChildren}
             { path: '', redirectTo: 'welcome', pathMatch: 'full'},
             { path: '**', component: PageNotFoundComponent }
           ], { /*enableTracing: true */})
